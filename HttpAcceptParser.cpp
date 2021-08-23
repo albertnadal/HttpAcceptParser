@@ -110,7 +110,7 @@ std::string HttpAcceptParser::parse(const std::string & acceptValue, const std::
     return getPreferableContentType(acceptedContentTypes, availableContentTypes);
 }
 
-bool HttpAcceptParser::stringToFloat(const std::string &s, float &f)
+bool HttpAcceptParser::stringToFloat(const std::string &s, float *f)
 {
     try
     {
